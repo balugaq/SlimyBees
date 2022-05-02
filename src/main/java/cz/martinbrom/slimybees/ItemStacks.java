@@ -145,8 +145,8 @@ public class ItemStacks {
     }
 
     public static final String EXTRACTS_MATERIALS_FROM_COMBS = "&fExtracts materials from combs";
-    public static final SlimefunItemStack CENTRIFUGE = new SlimefunItemStack(
-            "CENTRIFUGE",
+    public static final SlimefunItemStack SBEE_CENTRIFUGE = new SlimefunItemStack(
+            "SBEE_CENTRIFUGE",
             Material.GRINDSTONE,
             "&7Centrifuge",
             "",
@@ -278,15 +278,15 @@ public class ItemStacks {
     }
 
     public static String loreProductionModifier(double ratio) {
-        return "&7产出: &8&lx" + String.format("%.1f", ratio);
+        return "&7Production: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreLifespanModifier(double ratio) {
-        return "&7寿命: &8&lx" + String.format("%.1f", ratio);
+        return "&7Lifespan: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreOwner(String owner) {
-        return "&7拥有者: &b" + owner;
+        return "&7Owner: &b" + owner;
     }
 
 }

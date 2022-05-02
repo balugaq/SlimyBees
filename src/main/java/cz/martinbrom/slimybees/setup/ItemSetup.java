@@ -43,8 +43,8 @@ public class ItemSetup {
         initialized = true;
 
         // <editor-fold desc="Bee Products" defaultstate="collapsed">
-        new SlimefunItem(Categories.ITEMS, ItemStacks.BEESWAX, RecipeTypes.CENTRIFUGE, ItemStacks.CENTRIFUGE_COMB_RECIPE).register(plugin);
-        new SlimefunItem(Categories.ITEMS, ItemStacks.HONEY_DROP, RecipeTypes.CENTRIFUGE, ItemStacks.CENTRIFUGE_COMB_RECIPE).register(plugin);
+        new SlimefunItem(Categories.ITEMS, ItemStacks.BEESWAX, RecipeTypes.SBEE_CENTRIFUGE, ItemStacks.CENTRIFUGE_COMB_RECIPE).register(plugin);
+        new SlimefunItem(Categories.ITEMS, ItemStacks.HONEY_DROP, RecipeTypes.SBEE_CENTRIFUGE, ItemStacks.CENTRIFUGE_COMB_RECIPE).register(plugin);
 
         registerBeeProduct(ItemStacks.HONEY_COMB, plugin, true);
         registerBeeProduct(ItemStacks.DRY_COMB, plugin, true);
@@ -159,7 +159,7 @@ public class ItemSetup {
                 ItemStacks.HIVE_CASING, SlimefunItems.ADVANCED_CIRCUIT_BOARD, ItemStacks.HIVE_CASING,
         }).register(plugin);
 
-        Centrifuge centrifuge = new Centrifuge(Categories.ITEMS, ItemStacks.CENTRIFUGE);
+        Centrifuge centrifuge = new Centrifuge(Categories.ITEMS, ItemStacks.SBEE_CENTRIFUGE);
         centrifuge.register(plugin);
 
         ElectricCentrifuge elCentrifuge = new ElectricCentrifuge(Categories.ITEMS, ItemStacks.ELECTRIC_CENTRIFUGE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {

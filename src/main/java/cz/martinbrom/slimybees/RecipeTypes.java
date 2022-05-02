@@ -35,8 +35,8 @@ public class RecipeTypes {
                     "&fCan be obtained as a product",
                     "&fof bees working in a bee hive"));
 
-    public static final RecipeType CENTRIFUGE = new RecipeType(
-            SlimyBeesPlugin.getKey("centrifuge"),
+    public static final RecipeType SBEE_CENTRIFUGE = new RecipeType(
+            SlimyBeesPlugin.getKey("sbee_centrifuge"),
             new CustomItemStack(Material.GRINDSTONE,
                     "&fCentrifuge",
                     "",
