@@ -179,7 +179,7 @@ public class ItemStacks {
     public static final SlimefunItemStack BEEALYZER = new SlimefunItemStack(
             "BEEALYZER",
             Material.ITEM_FRAME,
-            "&7Beealyzer",
+            "&7蜜蜂分析仪",
             "",
             LoreBuilder.powerCharged(0, 50),
             "",
@@ -278,15 +278,15 @@ public class ItemStacks {
     }
 
     public static String loreProductionModifier(double ratio) {
-        return "&7Production: &8&lx" + String.format("%.1f", ratio);
+        return "&7产出: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreLifespanModifier(double ratio) {
-        return "&7Lifespan: &8&lx" + String.format("%.1f", ratio);
+        return "&7寿命: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreOwner(String owner) {
-        return "&7Owner: &b" + owner;
+        return "&7拥有者: &b" + owner;
     }
 
 }

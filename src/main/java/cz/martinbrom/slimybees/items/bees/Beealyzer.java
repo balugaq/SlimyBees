@@ -25,6 +25,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
@@ -67,8 +68,8 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
             if (removeItemCharge(e.getItem(), analyzeCost.getValue().floatValue())) {
                 createMenu().open(p);
             } else {
-                p.sendMessage("The beealyzer doesn't have enough energy to function properly! " +
-                        "Charge it using the charging bench.");
+                p.sendMessage("蜜蜂分析仪没有足够的能量来正常工作! " +
+                        "使用充电台为其充电");
             }
         };
     }
@@ -80,7 +81,7 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
 
     @Nonnull
     private ChestMenu createMenu() {
-        ChestMenu menu = new ChestMenu("Beealyzer");
+        ChestMenu menu = new ChestMenu("蜜蜂分析仪");
 
         for (int slot : BACKGROUND_SLOTS) {
             menu.addItem(slot, ChestMenuUtils.getBackground(), (p, s, i, a) -> false);
@@ -141,7 +142,7 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
                 }
 
                 // and clear the Beealyzer
-                menu.consumeItem(ITEM_SLOT, false);
+                menu.replaceExistingItem(ITEM_SLOT, new CustomItemStack(Material.AIR));
             }
         }
     }
@@ -152,8 +153,7 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
         ItemStack analyzedItem = analysisService.analyze(p, item);
         if (analyzedItem != null) {
             p.playSound(p.getLocation(), Sound.ITEM_BOOK_PAGE_TURN, 1f, 1f);
-            menu.consumeItem(ITEM_SLOT, analyzedItem.getAmount(), false);
-            menu.addItem(ITEM_SLOT, analyzedItem);
+            menu.replaceExistingItem(ITEM_SLOT, analyzedItem);
         }
     }
 

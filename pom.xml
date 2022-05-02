@@ -133,14 +133,14 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-27</version>
+            <version>RC-31</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -178,8 +178,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.seeseemelk</groupId>
-            <artifactId>MockBukkit-v1.16</artifactId>
-            <version>1.1.0</version>
+            <artifactId>MockBukkit-v1.18</artifactId>
+            <version>1.21.2</version>
             <scope>test</scope>
 
             <exclusions>
