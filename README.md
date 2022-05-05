@@ -2,7 +2,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=coverage)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=ncloc)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
 
-# SlimyBees
+# 林业蜜蜂
 SlimyBees is a Slimefun4 addon heavily inspired by the bee portion of the famous MC mod,
 [Forestry](https://www.curseforge.com/minecraft/mc-mods/forestry).
 It adds many bee species which can be discovered, bred and used to produce various materials.
