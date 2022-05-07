@@ -15,6 +15,6 @@ public class Categories {
 
     public static final ItemGroup ITEMS = new ItemGroup(
             SlimyBeesPlugin.getKey("slimybees_items"),
-            new CustomItemStack(Material.HONEYCOMB, "Slimy Bees"));
+            new CustomItemStack(Material.HONEYCOMB, "林业蜜蜂"));
 
 }
