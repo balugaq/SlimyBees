@@ -40,6 +40,6 @@ public class RecipeTypes {
             new CustomItemStack(Material.GRINDSTONE,
                     "&f离心机",
                     "",
-                    "&7放入离心机中获取));
+                    "&7放入离心机中获取"));
 
 }
