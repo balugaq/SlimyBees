@@ -107,9 +107,9 @@ public class BeeDiscoveryService {
             if (shouldBroadcastDiscoveries) {
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                     onlinePlayer.sendMessage("" + ChatColor.GOLD + ChatColor.BOLD + playerName
-                            + ChatColor.RESET + ChatColor.WHITE + " was the first one to discover the "
+                            + ChatColor.RESET + ChatColor.WHITE + "第一个发现了"
                             + ChatColor.BOLD + getDisplayNameForBroadcast(species, onlinePlayer)
-                            + ChatColor.RESET + ChatColor.WHITE + " species!");
+                            + ChatColor.RESET + ChatColor.WHITE + "物种!");
 
                     onlinePlayer.playSound(onlinePlayer.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1F, 1F);
                 }
@@ -215,7 +215,7 @@ public class BeeDiscoveryService {
     private void notifyPlayer(Player p, String name, boolean discover) {
         if (discover) {
             FireworkUtils.launchRandom(p, 1);
-            p.sendMessage(ChatColor.GREEN + "You have discovered a new species - "
+            p.sendMessage(ChatColor.GREEN + "你发现了新物种 - "
                     + ChatColor.GRAY + ChatColor.BOLD + name
                     + ChatColor.RESET + ChatColor.GREEN + "!");
         }
