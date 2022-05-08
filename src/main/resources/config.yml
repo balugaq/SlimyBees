@@ -11,9 +11,11 @@ nests:
   # 1 means unchanged, > 1 increased, < 1 decreased
   world-chance-modifier: 1
   worlds:
-    - worldnamehere
-    - worldnamehere_nether
-    - worldnamehere_the_end
+    - world
+    - sc
+    - zy
+    - world_nether
+    - world_the_end
 
 discoveries:
   # sends a message to every player when a player discovers a species
