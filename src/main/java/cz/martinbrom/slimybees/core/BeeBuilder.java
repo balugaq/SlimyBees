@@ -295,7 +295,7 @@ public class BeeBuilder {
             SlimefunItemStack nestItemStack = new SlimefunItemStack(
                     species.getName() + "_BEE_NEST",
                     Material.BEEHIVE,
-                    color + species.getDisplayName() + " Bee Nest");
+                    color + species.getDisplayName() + "蜂蜡");
 
             BeeNest nestBlock = new BeeNest(nestItemStack, species.getPrincessItemStack(), species.getDroneItemStack());
             nestBlock.addRandomDrop(new RandomizedItemStack(ItemStacks.HONEY_COMB, 1, 3));
