@@ -12,6 +12,9 @@ nests:
   world-chance-modifier: 1
   worlds:
     - world
+    - bskyblock_world
+    - bskyblock_world_nether
+    - bskyblock_world_the_end
     - sc
     - zy
     - world_nether
