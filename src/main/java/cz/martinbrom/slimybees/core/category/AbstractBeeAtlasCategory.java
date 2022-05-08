@@ -29,8 +29,8 @@ import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 @ParametersAreNonnullByDefault
 public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
-    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Undiscovered Species");
-    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Undiscovered Chance");
+    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现物种");
+    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现几率");
 
     protected final BeeLoreService loreService;
     protected final BeeRegistry beeRegistry;
@@ -77,7 +77,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
         // custom back button
         ItemStack backButton = new CustomItemStack(ChestMenuUtils.getBackButton(p,
-                "", "&fLeft Click: &7Go back to previous Page", "&fShift + Left Click: &7Go back to Main Menu"));
+                "", "&f左击: &7返回上一页", "&fShift左击: &7返回主菜单"));
         menu.addItem(1, backButton, (pl, s, i, a) -> {
             if (a.isShiftClicked()) {
                 navigationService.openMainMenu(profile, mode);
@@ -165,7 +165,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
      */
     protected String createChanceText(double chance) {
         int percentage = (int) Math.ceil(chance * 100);
-        return ChatColor.WHITE + "Chance: " + ChatColor.GRAY + percentage + "%";
+        return ChatColor.WHITE + "几率: " + ChatColor.GRAY + percentage + "%";
     }
 
     @Nullable
