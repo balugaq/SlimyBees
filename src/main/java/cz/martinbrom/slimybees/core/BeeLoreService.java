@@ -24,7 +24,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 @ParametersAreNonnullByDefault
 public class BeeLoreService {
 
-    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<unknown>";
+    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<未知>";
 
     /**
      * Checks whether the given {@link ItemStack} is considered to be an "unknown" bee
