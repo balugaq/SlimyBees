@@ -178,7 +178,7 @@ public class BeeSetup {
                 // TODO: 17.07.21 This is a testing only bee
                 new BeeBuilder(SpeciesUids.SECRET, ChatColor.DARK_AQUA, true)
                         .addMutation(SpeciesUids.ENDER, SpeciesUids.NETHER, 0.5)
-                        .setSecret(true),
+                        .setSecret(false),
         };
 
         SlimyBeesPlugin.logger().info("Registered " + bees.length + " bee species!");
