@@ -40,7 +40,7 @@ public class Centrifuge extends MultiBlockMachine {
         super(category, item, new ItemStack[] {
                 null, null, null,
                 null, new ItemStack(Material.IRON_TRAPDOOR), null,
-                null, new ItemStack(Material.DISPENSER), null
+                new ItemStack(Material.HONEY_BLOCK), new ItemStack(Material.DISPENSER), new ItemStack(Material.HONEY_BLOCK)
         }, BlockFace.SELF);
 
         centrifugeRecipes = new ArrayList<>();
