@@ -23,9 +23,9 @@ import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.implementation.guide.SurvivalSlimefunGuide;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.core.services.sounds.SoundEffect;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-
 @ParametersAreNonnullByDefault
 public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
@@ -64,12 +64,12 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
         }
 
         String suffix = getTitleSuffix();
-        String title = "Bee Atlas" + (suffix == null ? "" : " - " + suffix);
+        String title = "蜜蜂册" + (suffix == null ? "" : " - " + suffix);
         ChestMenu menu = createMenu(title);
 
         SurvivalSlimefunGuide guide = (SurvivalSlimefunGuide) Slimefun.getRegistry().getSlimefunGuide(mode);
         menu.setEmptySlotsClickable(false);
-        menu.addMenuOpeningHandler(pl -> pl.playSound(pl.getLocation(), guide.getSound(), 1, 1));
+        menu.addMenuOpeningHandler(pl -> SoundEffect.GUIDE_BUTTON_CLICK_SOUND.playFor(pl));
         guide.createHeader(p, profile, menu);
 
         // remove the search
