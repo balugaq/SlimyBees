@@ -15,6 +15,12 @@ nests:
     - bskyblock_world
     - bskyblock_world_nether
     - bskyblock_world_the_end
+    - aoneblock_world
+    - aoneblock_world_nether
+    - aoneblock_world_the_end
+    - acid_world
+    - acid_world_nether
+    - acid_world_the_end
     - sc
     - zy
     - world_nether
