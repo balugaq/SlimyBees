@@ -70,7 +70,7 @@ public class ElectricCentrifuge extends AbstractElectricMachine {
     public List<ItemStack> getDisplayRecipes() {
         List<ItemStack> displayRecipes = new ArrayList<>();
 
-        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜜脾");
+        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜂蜡");
         displayRecipes.add(anyComb);
         displayRecipes.add(ItemStacks.HONEY_DROP);
 

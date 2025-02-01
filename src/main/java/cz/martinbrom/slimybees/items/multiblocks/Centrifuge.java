@@ -111,7 +111,7 @@ public class Centrifuge extends MultiBlockMachine {
 
     @Override
     protected void registerDefaultRecipes(@Nonnull List<ItemStack> recipes) {
-        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜜脾");
+        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜂蜡");
         recipes.add(anyComb);
         recipes.add(ItemStacks.HONEY_DROP);
 

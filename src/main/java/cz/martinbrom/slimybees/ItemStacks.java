@@ -32,7 +32,7 @@ public class ItemStacks {
     public static final SlimefunItemStack HONEY_DROP = new SlimefunItemStack(
             "HONEY_DROP",
             Material.GOLD_NUGGET,
-            "&6由蜜蜂掉落");
+            "&6蜂遗");
 
     public static final SlimefunItemStack HONEY_COMB = createHoneycomb("HONEY", "&6蜂蜜");
     public static final SlimefunItemStack DRY_COMB = createHoneycomb("DRY", "&e干");
